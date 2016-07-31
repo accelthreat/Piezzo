@@ -1,6 +1,7 @@
 #include "pitchesx.h"
 #include "Piezzo.h"
 
+const int piezzopin = 8;
 const int BPM = 120;
 const int Q = 60000 / BPM;
 const int H = Q * 2;
@@ -8,14 +9,16 @@ const int W = Q * 4;
 const int E = Q / 2;
 const int S = Q / 4;
 
-Piezzo piezzo (8);
-int scale [] = {G5, G5, A5, G5, C5, B5, R , G5, G5, A5, G5, D5, C5, R, G5, G5, G5, E5, C5, B5, A5, F5, F5, E5, C5, D5, C5};
-int beats [] = {Q, Q, Q, Q, Q, Q , Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q , Q, Q, Q  , Q , Q , Q , Q , Q , Q};
+Piezzo piezzo (piezzopin);
+int scale [] = {G5,Q, G5,Q, A5,Q, G5,Q,  C5,Q,  B5,Q,  R , Q, G5,Q,  G5,Q, 
+A5, Q, G5, Q, D5, Q, C5, Q, R,Q,  G5,Q,  G5,Q,  G5, Q, E5,Q,  C5, Q, B5,Q, 
+A5,Q, F5,Q,  F5, Q, E5, Q, C5,Q,  D5,Q,  C5,Q};
+
 void setup() {
 }
 
 void loop() {
   int musicLength = sizeof(scale) / sizeof(int);
-  piezzo.play(scale, beats, musicLength);
+  piezzo.play(scale, musicLength);
   delay(1000);
 }
