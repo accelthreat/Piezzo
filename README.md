@@ -1,2 +1,2 @@
-# Piezzo-2
+# Piezzo
 This library is created to ease playing music in piezzo
