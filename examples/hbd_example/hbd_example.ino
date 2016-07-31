@@ -1,4 +1,3 @@
-#include "pitchesx.h"
 #include "Piezzo.h"
 
 const int piezzopin = 8;
