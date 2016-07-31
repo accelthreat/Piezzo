@@ -1,7 +1,7 @@
 #include "pitchesx.h"
 #include "Piezzo.h"
 
-const int BPM = 70
+const int BPM = 90
 ;
 const int Q = 60000 / BPM;
 const int H = Q * 2;
