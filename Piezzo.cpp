@@ -32,3 +32,10 @@ void Piezzo::play (int notes [], int noteLength) {
 
   }
 }
+
+void Piezzo::play (int notes [], int beats [], int noteLength) {
+  for (int i = 0; i < noteLength; i ++) {
+    playNote (notes [i], beats[i]);
+
+  }
+}
