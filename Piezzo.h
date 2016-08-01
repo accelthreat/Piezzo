@@ -8,6 +8,7 @@
 
 class Piezzo {
   public:
+    Piezzo ();
     Piezzo (int piezzopinz);
     void play (int notes [],int musicLength);
 
