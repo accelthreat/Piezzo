@@ -10,6 +10,7 @@ class Piezzo {
   public:
     Piezzo ();
     Piezzo (int piezzopinz);
+    void play (int notes []);
     void play (int notes [],int musicLength);
     void play (int notes [], int beats [], int musicLength);
 

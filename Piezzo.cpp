@@ -25,6 +25,13 @@ void Piezzo::playNote (int freq, int duration) {
 
 }
 
+void Piezzo::play (int notes []) {
+    int noteLength = sizeof(notes)/sizeof(notes[0]);
+  for (int i = 0; i < noteLength; i += 2) {
+    playNote (notes [i], notes[i + 1]);
+
+  }
+}
 
 void Piezzo::play (int notes [], int noteLength) {
   for (int i = 0; i < noteLength; i += 2) {
