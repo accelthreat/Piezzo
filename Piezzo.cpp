@@ -1,5 +1,5 @@
 /*
-  Piezzo.h - Library for playing music on Piezzo.
+  Piezzo.cpp - Library for playing music on Piezzo.
   Created by Matthew Lemuel Rey, July 31, 2016.
   Released into the public domain.
 */
