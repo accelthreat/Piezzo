@@ -11,6 +11,7 @@ class Piezzo {
     Piezzo ();
     Piezzo (int piezzopinz);
     void play (int notes [],int musicLength);
+    void play (int notes [], int beats [], int musicLength);
 
 
   private:
