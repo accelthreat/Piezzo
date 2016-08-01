@@ -6,12 +6,15 @@
 
 #include "Piezzo.h"
 
+<<<<<<< HEAD
 Piezzo::Piezzo () {
   piezzoPin = 13;
   pinMode(piezzoPin, OUTPUT);
 
 }
 
+=======
+>>>>>>> refs/remotes/origin/master
 Piezzo::Piezzo (int piezzopinz) {
   piezzoPin = piezzopinz;
   pinMode(piezzoPin, OUTPUT);
