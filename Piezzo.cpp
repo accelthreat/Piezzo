@@ -14,7 +14,7 @@ Piezzo::Piezzo (int piezzopinz){
 
 void Piezzo::playNote (int freq, int duration) {
 tone (piezzoPin,freq,duration);
-delay(50+duration);
+delay(1+duration);
   }
 
 
