@@ -6,6 +6,12 @@
 
 #include "Piezzo.h"
 
+Piezzo::Piezzo () {
+  piezzoPin = 13;
+  pinMode(piezzoPin, OUTPUT);
+
+}
+
 Piezzo::Piezzo (int piezzopinz) {
   piezzoPin = piezzopinz;
   pinMode(piezzoPin, OUTPUT);
