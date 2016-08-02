@@ -25,6 +25,7 @@ void Piezzo::playNote (double freq, int duration) {
 
 }
 
+<<<<<<< HEAD
 void Piezzo::play (double notes []) {
     int noteLength = sizeof(notes)/sizeof(notes[0]);
   for (int i = 0; i < noteLength; i += 2) {
@@ -32,6 +33,8 @@ void Piezzo::play (double notes []) {
 
   }
 }
+=======
+>>>>>>> parent of 34cd2f2... Adding Self Length
 
 void Piezzo::play (double notes [], int noteLength) {
   for (int i = 0; i < noteLength; i += 2) {

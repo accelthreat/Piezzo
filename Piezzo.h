@@ -10,9 +10,14 @@ class Piezzo {
   public:
     Piezzo ();
     Piezzo (int piezzopinz);
+<<<<<<< HEAD
     void play (double notes []);
     void play (double notes [],int musicLength);
     void play (double notes [], int beats [], int musicLength);
+=======
+    void play (int notes [],int musicLength);
+    void play (int notes [], int beats [], int musicLength);
+>>>>>>> parent of 34cd2f2... Adding Self Length
 
 
   private:
