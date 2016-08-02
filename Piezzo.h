@@ -14,10 +14,7 @@ class Piezzo {
     void play (double notes []);
     void play (double notes [],int musicLength);
     void play (double notes [], int beats [], int musicLength);
-
-    void play (int notes [],int musicLength);
-    void play (int notes [], int beats [], int musicLength);
-
+    int getLength (double notes []);
 
 
   private:

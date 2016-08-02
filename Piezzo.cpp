@@ -24,14 +24,19 @@ void Piezzo::playNote (double freq, int duration) {
   delay(1 + duration);
 
 }
-
-
-void Piezzo::play (double notes []) {
-    int noteLength;
-    for (int i = 0; i!= NULL; i++)
+int Piezzo::getLength (double notes[]) {
+ int noteLength = 0;
+    for (int i = 0; notes[i]!= 1.69; i++)
     {
      noteLength++;
     }
+return noteLength;
+
+}
+
+void Piezzo::play (double notes []) {
+
+int noteLength = getLength(notes);
   for (int i = 0; i < noteLength; i += 2) {
     playNote (notes [i], notes[i + 1]);
 
