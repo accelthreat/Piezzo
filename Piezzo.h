@@ -10,12 +10,15 @@ class Piezzo {
   public:
     Piezzo ();
     Piezzo (int piezzopinz);
-    void play (int notes [],int musicLength);
-    void play (int notes [], int beats [], int musicLength);
+
+    void play (double notes []);
+    void play (double notes [],int musicLength);
+    void play (double notes [], int beats [], int musicLength);
+    int getLength (double notes []);
 
 
   private:
     int piezzoPin;
-    void playNote (int freq, int duration);
+    void playNote (double freq, int duration);
 };
 
