@@ -7,12 +7,6 @@
 #include "Piezzo.h"
 
 
-Piezzo::Piezzo () {
-  piezzoPin = 13;
-  pinMode(piezzoPin, OUTPUT);
-
-}
-
 Piezzo::Piezzo (int piezzopinz) {
   piezzoPin = piezzopinz;
   pinMode(piezzoPin, OUTPUT);
@@ -44,16 +38,3 @@ int noteLength = getLength(notes);
 }
 
 
-void Piezzo::play (double notes [], int noteLength) {
-  for (int i = 0; i < noteLength; i += 2) {
-    playNote (notes [i], notes[i + 1]);
-
-  }
-}
-
-void Piezzo::play (double notes [], int beats [], int noteLength) {
-  for (int i = 0; i < noteLength; i ++) {
-    playNote (notes [i], beats[i]);
-
-  }
-}

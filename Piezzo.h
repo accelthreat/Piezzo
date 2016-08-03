@@ -8,13 +8,8 @@
 
 class Piezzo {
   public:
-    Piezzo ();
     Piezzo (int piezzopinz);
-
     void play (double notes []);
-    void play (double notes [],int musicLength);
-    void play (double notes [], int beats [], int musicLength);
-
 
 
   private:
