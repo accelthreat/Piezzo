@@ -13,14 +13,14 @@ Piezzo::Piezzo (int piezzopinz) {
 
 }
 
-void Piezzo::playNote (double freq, int duration) {
+void Piezzo::playNote (int freq, int duration) {
   tone (piezzoPin, freq, duration);
   delay(1 + duration);
 
 }
-int Piezzo::getLength (double notes[]) {
+int Piezzo::getLength (int notes[]) {
  int noteLength = 0;
-    for (int i = 0; notes[i]!= 1.69; i++)
+    for (int i = 0; notes[i]!= 1.00; i++)
     {
      noteLength++;
     }
@@ -28,7 +28,7 @@ return noteLength;
 
 }
 
-void Piezzo::play (double notes []) {
+void Piezzo::play (int notes []) {
 
 int noteLength = getLength(notes);
   for (int i = 0; i < noteLength; i += 2) {
